@@ -1,0 +1,8 @@
+{
+  "name": "remark_server",
+  "version": "0.0.1",
+  "description": "Backend for remote control of remark.js",
+  "dependencies": {
+    "express": "^4.6.1"
+  }
+}
