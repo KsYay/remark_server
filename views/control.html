@@ -1,8 +1,22 @@
 <!doctype html>
 <html>
   <head>
-    <titile>Presentation control</title>
+    <title>Presentation control</title>
     <meta charset='utf-8'>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html, body {
+        height: 100%;
+      }
+      button {
+        font-size: 20em;
+        width: 49%;
+        height: 100%;
+      }
+    </style>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
     function sendBack(){
@@ -22,7 +36,7 @@
     </script>
   </head>
   <body>
-    <button id='back' onclick='sendBack()'>Back</button>
-    <button id='next' onclick='sendNext()'>Next</button>
+    <button id='back' onclick='sendBack()'><-</button>
+    <button id='next' onclick='sendNext()'>-></button>
   </body>
 </html>
