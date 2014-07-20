@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <titile>Presentation control</title>
+    <meta charset='utf-8'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+    function sendBack(){
+      $.ajax({
+        type: "POST",
+        url: '/previous',
+        data: {data: Math.random()}
+      });
+    }
+    function sendNext(){
+      $.ajax({
+        type: "POST",
+        url: '/next',
+        data: { data: Math.random()}
+      });
+    }
+    </script>
+  </head>
+  <body>
+    <button id='back' onclick='sendBack()'>Back</button>
+    <button id='next' onclick='sendNext()'>Next</button>
+  </body>
+</html>
